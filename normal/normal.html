@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <button id="inicio" onclick="goToIndex()">Volver a la Página Principal</button>
+        <h1 id="game-title">Modo: <span id="game-mode"></span></h1>
+        <button id="selection-mode" class="game-mode">Selección de modos</button>
+        <div id="hangman-container">
+            <img id="hangman-rope" src="../img/horca.png" alt="Horca">
+            <video id="hangman-video" src="../img/normal.mp4" style="display: none; width: 60vw; height: 30vh; margin-bottom: 10px;" autoplay muted loop></video>
+        </div>
+        <div id="table-container">
+            <img id="table" src="../img/mesa 5.png" alt="Mesa">
+        </div>
+        <div id="word-container">
+            <p id="word-display">_ _ _ _ _</p>
+        </div>
+        <div id="letters-container">
+            <p>Selecciona una letra:</p>
+            <div id="letters"></div>
+        </div>
+        <p id="message"></p>
+        <button id="restart-button" style="display: none;">Reiniciar</button>
+    </div>
+    <script src="normal.js"></script> 
+</body>
+</html>
